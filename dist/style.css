@@ -1,0 +1,100 @@
+* {
+  font-family: "Inconsolata", monospace;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 300px;
+  padding: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.ticker-container {
+  position: relative;
+  padding: 32px;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ticker-value {
+  font-size: 48px;
+  margin-bottom: 16px;
+  color: #9dca8f;
+}
+.ticker-label {
+  font-size: 24px;
+  color: #9dca8f;
+}
+
+.svg-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: #2d3c44;
+  z-index: -3;
+}
+
+.controls-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 32px;
+  justify-content: center;
+}
+
+.controls-container button {
+  color: #9dca8f;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+#session-cunt,
+#break-cunt,
+#play-pause {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9dca8f;
+  font-size: 1rem;
+  margin: 4px 4px;
+  border-radius: 5px;
+  background-color: #2d3c44;
+}
+
+#session-cunt div,
+#break-cunt div,
+#play-pause div {
+  padding: 4px 8px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#session-cunt i,
+#break-cunt i {
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: 0.1s ease transform;
+}
+
+#play-pause i {
+  cursor: pointer;
+  transition: 0.1s ease transform;
+}
+
+#session-length button:active i,
+#break-length button:active i,
+#play-pause button:active i {
+  transform: scale(0.9);
+}
